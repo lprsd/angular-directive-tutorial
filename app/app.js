@@ -1,13 +1,13 @@
 var app = angular.module('demo', [])
 
-app.directive('chart', function (){
+app.directive('enteralert', function (){
     return function(scope, element, attrs){
         element.bind("mouseenter", function(){
             return alert("Mouse entered!");
         })
     }
 })
-app.directive('chart2', function (){
+app.directive('leavealert', function (){
     return function(scope, element, attrs){
         element.bind("mouseleave", function(){
             return alert("Mouse left!");
