@@ -1,16 +1,16 @@
 var app = angular.module('demo', [])
 
-app.directive('enteralert', function (){
+app.directive('highlighton', function (){
     return function(scope, element, attrs){
         element.bind("mouseenter", function(){
-            return alert("Mouse entered!");
+            element.addClass("jumbotron");
         })
     }
 })
-app.directive('leavealert', function (){
+app.directive('highlightoff', function (){
     return function(scope, element, attrs){
         element.bind("mouseleave", function(){
-            return alert("Mouse left!");
+            element.removeClass('jumbotron');
         })
     }
 })
