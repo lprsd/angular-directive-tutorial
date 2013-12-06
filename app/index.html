@@ -10,8 +10,8 @@
 </head>
 
 
-<body>
-    <div ng-app="demo" class="container">
+<body ng-app="demo">
+    <div ng-controller="MainController" class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
           <li class="active"><a href="#">Home</a></li>
@@ -25,21 +25,24 @@
       </div>
 
       <div class="row marketing" highlighton highlightoff>
-        <div class="col-lg-6">
+        <div>
           <h4>Subheading</h4>
           <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
 
         </div>
       </div>
 
+      <div id="container">
+      </div>
       <div class="footer">
         <p></p>
       </div>
 
     </div>
     <script src="./angular.min.js"></script>
-    <script src="./app.js"></script>
+    <script src="./jquery-1.10.2.min.js"></script>
     <script src="./highcharts.js"></script>
+    <script src="./app.js"></script>
 </body>
 
 </html>
